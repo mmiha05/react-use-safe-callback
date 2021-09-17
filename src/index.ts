@@ -1,6 +1,6 @@
 import { DependencyList, useCallback, useEffect, useRef } from "react";
 
-export function useSafeCallback<T extends (...args: any[]) => any>(
+function useSafeCallback<T extends (...args: any[]) => any>(
   fn: T,
   deps: DependencyList
 ): (...args: Parameters<T>) => ReturnType<T> | void {
@@ -24,3 +24,6 @@ export function useSafeCallback<T extends (...args: any[]) => any>(
     [deps]
   );
 }
+
+export default useSafeCallback;
+export { useCallback };
