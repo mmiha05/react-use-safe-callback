@@ -37,6 +37,17 @@ useEffect(() => {
 - Callback you have provided into hook will be fired **only if component** is mounted. That means that besides not fireing when component is un-mounting, it will not also fire until it has been mounted once
 - Since there is no guarantee that function will be called when component is mounted, the returned value can be undefined (if you use Typescript it will warn you)
 
+## Linting
+
+You can add this hook to `additionalHooks` rule of [react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks#advanced-configuration) plugin.
+For example
+
+```json
+"react-hooks/exhaustive-deps": ["warn", {
+  "additionalHooks": "(useMyCustomHook|useSafeCallback)"
+}]
+```
+
 ## License
 
 This project is licensed under the MIT License. Copy of license can be found in repository root.
