@@ -1,6 +1,6 @@
 # react-use-safe-callback
 
-Hook that returns function that will not be triggered if component unmounts.
+Hook that returns function that will not be triggered if component is not mounted.
 
 ## Use case and usage
 
