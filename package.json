@@ -1,7 +1,7 @@
 {
   "name": "react-use-safe-callback",
   "version": "0.0.1",
-  "description": "Hook that returns function that will not be triggered if component is not mounted",
+  "description": "Hook that returns function that will fire no-op if component is not mounted.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {

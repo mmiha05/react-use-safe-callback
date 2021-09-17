@@ -1,10 +1,9 @@
 import { DependencyList, useCallback, useEffect, useRef } from "react";
 
 /**
- * Returns function that will fire given callback only if component is mounted
- * @param fn Callback function
- * @param deps Dependencies of the hook
- * @returns
+ * Returns function that will fire no-op if component is not mounted.
+ * @param fn Callback function.
+ * @param deps Dependencies of the hook.
  */
 function useSafeCallback<T extends (...args: any[]) => any>(
   fn: T,
