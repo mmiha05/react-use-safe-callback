@@ -26,4 +26,4 @@ function useSafeCallback<T extends (...args: any[]) => any>(
 }
 
 export default useSafeCallback;
-export { useCallback };
+export { useSafeCallback };
