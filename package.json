@@ -46,11 +46,10 @@
     "format": "npx prettier . --check",
     "tsc-check": "npx tsc --noEmit",
     "lint": "eslint src/* --max-warnings 0",
-    "check": "npm run format && npm run tsc-check && npm run lint && npm test",
+    "check": "yarn format && yarn tsc-check && yarn lint && yarn test",
     "ts-declare": "tsc src/index.ts --jsx react --allowUmdGlobalAccess --declaration --emitDeclarationOnly --esModuleInterop --outDir dist",
-    "build": "npm run check && npm run bundle && npm run ts-declare",
-    "make-release": "npm run husky-setup && npm run build && npm run ts-declare && husky install",
-    "husky-setup": "npx husky-init && npx husky set .husky/pre-commit \"npx pretty-quick --staged\" && npx husky set .husky/pre-push \"npm run check\""
+    "build": "yarn check && yarn bundle && yarn ts-declare",
+    "husky-setup": "npx husky-init && npx husky set .husky/pre-commit \"npx pretty-quick --staged\" && npx husky set .husky/pre-push \" yarn check\""
   },
   "repository": "https://github.com/mmiha05/react-use-safe-callback.git",
   "author": "mmiha05 <47044629+mmiha05@users.noreply.github.com>",
