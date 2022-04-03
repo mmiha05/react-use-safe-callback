@@ -1,6 +1,6 @@
 {
   "name": "react-use-safe-callback",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hook that returns function that will fire no-op if component is not mounted.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
