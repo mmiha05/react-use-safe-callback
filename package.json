@@ -49,7 +49,8 @@
     "all-checks": "yarn format && yarn tsc-check && yarn lint && yarn test",
     "ts-declare": "tsc src/index.ts --jsx react --allowUmdGlobalAccess --declaration --emitDeclarationOnly --esModuleInterop --outDir dist",
     "build": "yarn all-checks && yarn bundle && yarn ts-declare",
-    "husky-setup": "npx husky-init && npx husky set .husky/pre-commit \"npx pretty-quick --staged\" && npx husky set .husky/pre-push \" yarn all-checks\""
+    "husky-setup": "npx husky-init && npx husky set .husky/pre-commit \"npx pretty-quick --staged\" && npx husky set .husky/pre-push \" yarn all-checks\"",
+    "prepare": "husky install"
   },
   "repository": "https://github.com/mmiha05/react-use-safe-callback.git",
   "author": "mmiha05 <47044629+mmiha05@users.noreply.github.com>",
