@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 import { useSafeCallback } from ".";
 import { renderHook } from "@testing-library/react-hooks";
 
