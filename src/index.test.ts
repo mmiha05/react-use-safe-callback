@@ -1,5 +1,5 @@
 import { useSafeCallback } from ".";
-import { renderHook } from "@testing-library/react-hooks";
+import { renderHook } from "@testing-library/react";
 
 describe("Safe callback", () => {
   it("wraps the callback correctly and returns expected result", () => {
