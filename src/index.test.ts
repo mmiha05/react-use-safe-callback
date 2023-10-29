@@ -4,7 +4,7 @@ import { renderHook } from "@testing-library/react-hooks";
 describe("Safe callback", () => {
   it("wraps the callback correctly and returns expected result", () => {
     const hook = renderHook(() =>
-      useSafeCallback((a: number, b: number) => a + b, [])
+      useSafeCallback((a: number, b: number) => a + b, []),
     );
 
     expect(hook.result.current(10, 5)).toEqual(15);
@@ -20,7 +20,7 @@ describe("Safe callback", () => {
         initialProps: {
           multiplier: 5,
         },
-      }
+      },
     );
 
     expect(hook.result.current(5)).toEqual(25);

@@ -7,7 +7,7 @@ import { DependencyList, useCallback, useEffect, useRef } from "react";
  */
 function useSafeCallback<T extends (...args: any[]) => any>(
   fn: T,
-  deps: DependencyList
+  deps: DependencyList,
 ): (...args: Parameters<T>) => ReturnType<T> | void {
   const isMounted = useRef(false);
 
@@ -26,7 +26,7 @@ function useSafeCallback<T extends (...args: any[]) => any>(
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [deps]
+    [deps],
   );
 }
 
